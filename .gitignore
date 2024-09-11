@@ -1,0 +1,6 @@
+/db_data/
+/vendor/
+/.env
+/node_modules/
+/storage/
+/public/storage/
