@@ -93,7 +93,6 @@ $app->get('/tournament/{id}', function ($request, $response, $args) {
         $response->getBody()->write(json_encode($responseData));
         return $response->withHeader('Content-Type', 'application/json');
     } else {
-        // Si no se encuentra el torneo, devolver un error 404
         $response->getBody()->write(json_encode(['error' => 'No encontramos el torneo']));
         return $response->withHeader('Content-Type', 'application/json')->withStatus(404);
     }
